@@ -27,7 +27,7 @@
 
     <!-- ****************************** BODY  ****************************** -->
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 hide-scroll" id="body">
 
 
     <!-- ****************************** NAV  ****************************** -->
@@ -36,14 +36,16 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <span class="font-bold text-xl text-cyan-500 orbitron">Ghost Community</span>
+                    <a href="#body" class="font-bold text-xl text-cyan-500 orbitron">Ghost Community</a>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4 text-white ">
-                        <a href="#mission" class="nav-link">Our Mission</a>
                         <a href="#about" class="nav-link">About Ghost</a>
+                        <p>|</p>
                         <a href="#platform" class="nav-link">Platform Vision</a>
+                        <p>|</p>
                         <a href="#features" class="nav-link">Features</a>
+                        <p>|</p>
                         <a href="#revenue" class="nav-link">Revenue Model</a>
                     </div>
                 </div>
@@ -93,7 +95,7 @@
     <section id="mission" class="py-24 md:py-32 text-white relative"> 
         <div class="absolute inset-0 bg-black opacity-50"></div> 
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10"> 
-            <h1 class="text-4xl md:text-5xl font-bold mb-6">$GHOST: The Ultimate Pet Community</h1> 
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 orbitron">$GHOST: The Ultimate Pet Community</h1> 
             <p class="text-xl md:text-2xl leading-relaxed"> 
                 Our mission is to build the world's premier pet community that empowers pet owners through knowledge sharing, AI-enhanced tools, and decentralized technology, ultimately improving pet happiness, health, and longevity.
             </p>
@@ -104,7 +106,7 @@
 
     <section id="about" class="py-16 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="section-title font-bold text-3xl text-cyan-500 orbitron pb-5" >About Ghost</h1>
+            <h1 class="section-title font-bold text-3xl text-cyan-500 orbitron pb-5 text-center" >About Ghost</h1>
             <p class="text-center text-lg text-white mb-12">
                 This section introduces the Ghost community, highlighting its core purpose and the significant advantages it offers to pet owners. Explore how we blend support with technology to enhance the lives of pets and their families.
             </p>
@@ -150,7 +152,7 @@
 
     <section id="platform" class="py-16 bg-zinc-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title">Platform Vision: Upcoming Utilities</h2>
+            <h2 class="text-3xl font-semibold text-center text-cyan-500 my-5 orbitron">Platform Vision: Upcoming Utilities</h2>
              <p class="text-center text-lg text-white mb-12">
                 Discover the future of pet care with Ghost. This section outlines the technology powering our platform and our vision for a comprehensive Virtual Pet Companion Application & Website, designed to offer unparalleled support and resources to pet owners.
             </p>
@@ -188,14 +190,14 @@
 
     <section id="features" class="py-16 bg-zinc-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title">Upcoming Features Showcase</h2>
+            <h2 class=" text-3xl font-semibold text-center text-cyan-500 my-5 orbitron">Upcoming Features Showcase</h2>
             <p class="text-center text-lg text-white mb-12">
                 Explore the wide array of upcoming features designed to assist you in every aspect of pet ownership. Swipe left or right to navigate through detailed categories, revealing tools and resources tailored to your pet's needs.
             </p>
 
             <div class="carousel-container-wrapper">
                 <div id="feature-carousel-items" class="carousel-items-flex">
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">🔍</span> Pet Selection Assistance</h3>
                         <ul>
                             <li>Breed Research</li>
@@ -203,7 +205,7 @@
                             <li>Age Considerations</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">🩺</span> Health</h3>
                         <ul>
                             <li>Nutrition & Hydration Guidance</li>
@@ -220,7 +222,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">🎓</span> Training & Socialization</h3>
                         <ul>
                             <li>Basic Commands & Tutorials</li>
@@ -230,7 +232,7 @@
                             <li>Positive Reinforcement & Tutorials</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">🏡</span> Safety & Environment</h3>
                         <ul>
                             <li>Dog-Proofing</li>
@@ -239,7 +241,7 @@
                             <li>Environment & Weather Considerations</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">🧠</span> Behavioral & Mental Health</h3>
                         <ul>
                             <li>Chewing & Digging Guidance</li>
@@ -248,11 +250,11 @@
                             <li>Building a Bond - Considerations</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
                         <h3><span class="icon mr-2">📈</span> Long-Term Commitment</h3>
                         <ul>
-                            <li>Budget Considerations (proactively identifying potential upcoming pet expenses)</li>
                             <li>Long-Term Pet Care Considerations</li>
+                            <li>Budget Considerations <br>(proactively identifying potential upcoming pet expenses)</li>
                         </ul>
                     </div>
                 </div>
@@ -269,93 +271,93 @@
 
     <section id="revenue" class="py-16 bg-zinc-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="section-title">Community Revenue Sharing Model</h2>
+            <h2 class="text-3xl font-semibold text-center text-cyan-500 my-5 orbitron">Community Revenue Sharing Model</h2>
              <p class="text-center text-lg text-white mb-12">
                 Ghost is committed to a sustainable and community-focused financial model. Swipe to explore the diverse revenue streams that will support the platform's growth and development.
             </p>
             <div class="carousel-container-wrapper">
                 <div id="revenue-carousel-items" class="carousel-items-flex">
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">💎</span>1. Premium Membership Tiers</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon ">💎</span>Premium Membership Tiers</h1>
+                        <ul class="w-[80%]">
                             <li>Basic free membership with limited features</li>
                             <li>Premium subscription with full access to AI diagnostics, personalized care plans, and advanced training resources</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">📞</span>2. Virtual Pet Health Consultations</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">📞</span>Virtual Pet Health Consultations</h1>
+                        <ul class="w-[80%]">
                             <li>On-demand AI preliminary screenings</li>
                             <li>Paid connections to licensed veterinarians for virtual consultations</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">🛒</span>3. Marketplace Commission</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">🛒</span>Marketplace Commission</h1>
+                        <ul class="w-[80%]">
                             <li>Curated marketplace for pet products with verified quality standards</li>
                             <li>Affiliate partnerships with trusted pet brands and services</li>
                             <li>Commission on purchases made through the platform</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">🖼️</span>4. Personalized Pet NFTs & Trading Cards</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">🖼️</span>Personalized Pet NFTs & Trading Cards</h1>
+                        <ul class="w-[80%]">
                             <li>Unique digital assets representing personalized care plans</li>
                             <li>Collectible virtual pet companions with utility within the ecosystem</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">📚</span>5. Community-Validated Content</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">📚</span>Community-Validated Content</h1>
+                        <ul class="w-[80%]">
                             <li>Specialized training courses created by certified trainers</li>
                             <li>Premium educational content packages for specific breeds or situations</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">📊</span>6. Data Insights (Privacy-Preserved)</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">📊</span>Data Insights (Privacy-Preserved)</h1>
+                        <ul class="w-[80%]">
                             <li>Anonymized pet health and behavior insights for research institutions</li>
                             <li>Trend reports for pet industry partners</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">⭐</span>7. Event Sponsorship and Coordination</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">⭐</span>Event Sponsorship and Coordination</h1>
+                        <ul class="w-[80%]">
                             <li>Fees for organizing in-person meetups, playdates, and training sessions</li>
                             <li>Virtual and physical sponsorship revenue for specialized workshops</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">⌚</span>8. AI-Enhanced Pet Products</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">⌚</span>AI-Enhanced Pet Products</h1>
+                        <ul class="w-[80%]">
                             <li>Smart collars / monitoring devices integrated with various application features to monitor health, movement, and location information</li>
                             <li>Personalized nutrition and treat subscription boxes</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">🗳️</span>9. Tokenized Community Governance</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">🗳️</span>Tokenized Community Governance</h1>
+                        <ul class="w-[80%]">
                             <li>Governance tokens for community voting on community and platform development</li>
                             <li>Staking rewards for active community contributors</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">🧑‍⚕️</span>10. Pet Care Professional Directory</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">🧑‍⚕️</span> Pet Care Professional Directory</h1>
+                        <ul class="w-[80%]">
                             <li>Featured listings for verified trainers, groomers, and veterinarians</li>
                             <li>Commission on bookings made through the platform</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">📱</span>11. Branded Mobile App Extensions</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon">📱</span>Branded Mobile App Extensions</h1>
+                        <ul class="w-[80%]">
                             <li>Premium features or specialized modules (training tracker, health monitor)</li>
                             <li>In-app purchases for virtual pet accessories or enhancements</li>
                         </ul>
                     </div>
-                    <div class="carousel-item-card">
-                        <h3><span class="icon">🛡️</span>12. Pet Insurance Partnerships</h3>
-                        <ul>
+                    <div class="flex text-xl carousel-item-card items-center  justify-center">
+                        <h1 class="text-2xl bold"><span class="icon ">🛡️</span>Pet Insurance Partnerships</h1>
+                        <ul class="w-[80%]">
                             <li>Custom insurance packages based on pet data and preventative care</li>
                             <li>Commission on referred insurance plans</li>
                         </ul>
@@ -372,7 +374,7 @@
 
         <!-- ****************************** FOOTER ****************************** -->
 
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-black text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p>&copy; <span id="currentYear"></span> Ghost Pet Community. All rights reserved.</p>
             <p class="text-sm text-gray-400 mt-1">Empowering Pet Owners, Enhancing Pet Lives.</p>

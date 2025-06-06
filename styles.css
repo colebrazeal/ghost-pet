@@ -1,6 +1,18 @@
+@import "tailwindcss";
+
+html {
+    background-color: black;
+}
+
 body {
     font-family: 'Inter', sans-serif; 
+    overflow-x: hidden;
 }
+
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
 .orbitron {
     font-family: "Orbitron", sans-serif;
     font-optical-sizing: auto;
@@ -8,9 +20,14 @@ body {
     font-style: normal;
   }
 
+  .bold {
+    font-weight: 600;
+  }
+
 .nav-link {
     @apply px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-teal-500 hover:text-white transition-colors;
 }
+
 .nav-link.active {
     @apply bg-teal-600 text-white;
 }
@@ -20,38 +37,30 @@ body {
     height: 35px;
     filter: invert(100%);
 }
+
 .section-title {
     @apply font-bold text-teal-700 mb-6 text-center;
 }
+
 .card { /* General card style, can be used outside carousels */
     @apply bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow flex flex-col; 
 }
+
 .card-image {
     @apply w-full h-48 object-cover rounded-md mb-4; /* Style for images in cards */
 }
+
 /* For smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
-/* Custom scrollbar for a cleaner look - optional */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+
 .icon { /* General icon style */
     font-size: 1.25rem; 
     margin-right: 0.5rem;
     color: #0D9488; /* teal-600 */
 }
+
 .card .icon { /* Icon style specifically for non-carousel cards if needed */
     font-size: 1.75rem; 
     margin-bottom: 0.5rem;
@@ -78,15 +87,18 @@ html {
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
 .carousel-items-flex {
     display: flex;
     transition: transform 0.3s ease-out; 
     cursor: grab;
     user-select: none; 
 }
+
 .carousel-items-flex.dragging {
     cursor: grabbing;
 }
+
 .carousel-item-card { 
     flex-shrink: 0; 
     width: 100%; 
@@ -99,20 +111,23 @@ html {
     display: flex; 
     flex-direction: column; 
 }
+
 .carousel-item-card:last-child {
     border-right: none;
 }
+
 .carousel-item-card h3 { 
      @apply text-xl font-semibold text-teal-600 mb-4 flex items-center justify-center; /* MODIFIED: Added justify-center */
 }
+
 .carousel-item-card ul { 
     @apply list-disc list-inside text-gray-600 text-base space-y-2 flex-grow; /* MODIFIED: Removed ml-4 */
     /* The text-align:center from .carousel-item-card will center the li content */
 }
+
  .carousel-item-card ul ul { 
     @apply list-circle list-inside mt-1 text-sm text-gray-500; /* MODIFIED: Removed ml-5 */
 }
-
 
 .carousel-navigation {
     position: absolute;
@@ -124,11 +139,12 @@ html {
     z-index: 10;
     pointer-events: none; 
 }
+
 .carousel-navigation button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    padding: 0.75rem 1rem;
+    padding: 1rem 1rem;
     cursor: pointer;
     border-radius: 9999px; 
     font-size: 1.5rem;
@@ -137,19 +153,23 @@ html {
     pointer-events: all; 
     margin: 0 0.5rem; 
 }
+
 .carousel-navigation button:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
+
 .carousel-navigation button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
+
 .carousel-pagination {
     display: flex;
     justify-content: center;
     margin-top: 1.5rem;
     gap: 0.75rem;
 }
+
 .carousel-pagination .dot {
     width: 12px;
     height: 12px;
@@ -158,6 +178,7 @@ html {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
 .carousel-pagination .dot.active {
-    background-color: #0D9488; /* teal-600 */
+    background-color: oklch(71.5% 0.143 215.221); /* teal-600 */
 }
