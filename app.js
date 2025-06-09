@@ -131,19 +131,19 @@
             updatePosition();
         }
 
-        function updatePagi() {
-            if (!paginationContainer) return;
-            paginationContainer.innerHTML = '';
-            carouselItems.forEach((_, index) => {
-                const dot = document.createElement('span');
-                dot.classList.add('dot');
-                if (index === currentIndex) {
-                    dot.classList.add('active');
-                }
-                dot.addEventListener('click', () => goTo(index));
-                paginationContainer.appendChild(dot);
-            });
-        }
+        // function updatePagi() {
+        //     if (!paginationContainer) return;
+        //     paginationContainer.innerHTML = '';
+        //     carouselItems.forEach((_, index) => {
+        //         const dot = document.createElement('span');
+        //         dot.classList.add('dot');
+        //         if (index === currentIndex) {
+        //             dot.classList.add('active');
+        //         }
+        //         dot.addEventListener('click', () => goTo(index));
+        //         paginationContainer.appendChild(dot);
+        //     });
+        // }
 
         function updateNavBtns() {
             if (!prevBtn || !nextBtn) return;
@@ -185,10 +185,10 @@
             }
         }
         
-        if (prevBtn && nextBtn) {
-            prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
-            nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
-        }
+        // if (prevBtn && nextBtn) {
+        //     prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+        //     nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+        // }
 
         carousel.addEventListener('mousedown', dragStartHandler);
         document.addEventListener('mousemove', draggingHandler); 

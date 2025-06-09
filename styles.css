@@ -71,15 +71,16 @@ html {
 
 /* Hero Section Background Image */
 #mission {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/A0AEC0/FFFFFF?text=Happy+Pets+and+Owners+Community'); */
     background-image: url(assets/ghost.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 800px;
 }
 
 /* Carousel specific styles - Reusable for multiple carousels */
-.carousel-container-wrapper {
+/* .carousel-container-wrapper {
     position: relative;
     max-width: 800px; 
     margin: 2rem auto; 
@@ -102,10 +103,10 @@ html {
 .carousel-item-card { 
     flex-shrink: 0; 
     width: 100%; 
-    min-height: 300px; 
+    min-height: 850px; 
     padding: 2rem;
     background-color: white;
-    text-align: center; /* MODIFIED: Text alignment to center */
+    text-align: center;
     box-sizing: border-box; 
     border-right: 1px solid #e5e7eb; 
     display: flex; 
@@ -117,16 +118,15 @@ html {
 }
 
 .carousel-item-card h3 { 
-     @apply text-xl font-semibold text-teal-600 mb-4 flex items-center justify-center; /* MODIFIED: Added justify-center */
+     @apply text-xl font-semibold text-teal-600 mb-4 flex items-center justify-center;
 }
 
 .carousel-item-card ul { 
-    @apply list-disc list-inside text-gray-600 text-base space-y-2 flex-grow; /* MODIFIED: Removed ml-4 */
-    /* The text-align:center from .carousel-item-card will center the li content */
+    @apply list-disc list-inside text-gray-600 text-base space-y-2 flex-grow; 
 }
 
  .carousel-item-card ul ul { 
-    @apply list-circle list-inside mt-1 text-sm text-gray-500; /* MODIFIED: Removed ml-5 */
+    @apply list-circle list-inside mt-1 text-sm text-gray-500; 
 }
 
 .carousel-navigation {
@@ -138,9 +138,9 @@ html {
     transform: translateY(-50%);
     z-index: 10;
     pointer-events: none; 
-}
+} */
 
-.carousel-navigation button {
+/* .carousel-navigation button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -152,13 +152,13 @@ html {
     transition: background-color 0.3s;
     pointer-events: all; 
     margin: 0 0.5rem; 
-}
+} */
 
-.carousel-navigation button:hover {
+/* .carousel-navigation button:hover {
     background-color: rgba(0, 0, 0, 0.7);
-}
+} */
 
-.carousel-navigation button:disabled {
+/* .carousel-navigation button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
@@ -173,12 +173,154 @@ html {
 .carousel-pagination .dot {
     width: 12px;
     height: 12px;
-    background-color: #D1D5DB; /* gray-300 */
+    background-color: #D1D5DB;
     border-radius: 9999px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .carousel-pagination .dot.active {
-    background-color: oklch(71.5% 0.143 215.221); /* teal-600 */
+    background-color: oklch(71.5% 0.143 215.221); 
+} */
+
+/* ROADMAP CAROUSEL TEST */
+
+.hidden-card {
+    display: none !important;
+  }
+
+  .cursor {
+    cursor: grab;
+  }
+
+  #carousel {
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering of carousel children */
+  /* height: 100vh; */
+  margin: 0 auto;          /* horizontal centering if width is set */
+  /* position: relative; */
+  /* overflow: visible;  */
+  cursor: grab;
 }
+
+#carousel:active {
+    cursor: grabbing;
+}
+
+  #carousel div {
+    transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+    opacity: 1;
+    margin: 0 15px 0 15px
+  }
+
+/* #carousel div.hideLeft,
+#carousel div.hideRight,
+#carousel div.nextRightSecond {
+    display: none;
+} */
+
+  #carousel div.prev {
+    z-index: 5;
+    /* left: 30%; */
+    /* transform: translateY(50px) translateX(-50%); */
+  }
+
+  #carousel div.prevLeftSecond {
+    z-index: 4;
+    /* left: 15%; */
+    /* transform: translateY(50%) translateX(-50%); */
+    opacity: 0.7;
+  }
+
+  #carousel div.selected {
+    z-index: 10;
+    /* left: 50%; */
+    /* transform: translateY(0px) translateX(-50%); */
+    
+  }
+
+  #carousel div.next {
+    z-index: 5;
+    /* left: 70%; */
+    /* transform: translateY(50px) translateX(-50%); */
+    /* opacity: 0.7; */
+  }
+
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    /* left: 85%; */
+    /* transform: translateY(50%) translateX(-50%); */
+    /* opacity: 0.7; */
+  }
+  
+  .buttons {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+  }
+
+  .carousel-card {
+    flex: 0 0 auto;
+    width: 450px;
+    min-height: 700px;
+    aspect-ratio: 2 / 3;
+    background: linear-gradient(to bottom, #000, #3d87e3);
+    color: #f3f4f6;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .carousel-card-upcoming {
+    flex: 0 0 auto;
+    width: 450px;
+    min-height: 700px;
+    aspect-ratio: 2 / 3;
+    background: linear-gradient(to bottom, #000, #696969);
+    color: #f3f4f6;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .icon { /* General icon style */
+    font-size: 1.25rem; 
+    margin-right: 0.5rem;
+}
+
+.bold {
+    font-weight: 600;
+  }
+
+  .glow-border-green {
+    border: 2px solid #00C853;
+    box-shadow: 
+      0 0 5px rgba(0, 200, 83, 0.5),
+      0 0 10px rgba(0, 200, 83, 0.3),
+      0 0 15px rgba(0, 200, 83, 0.2);
+  }
+
+  .glow-border-grey {
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    box-shadow: 
+      0 0 5px rgba(229, 229, 229, 0.6),
+      0 0 10px rgba(229, 229, 229, 0.4),
+      0 0 15px rgba(229, 229, 229, 0.3);
+  }
+
+  @media screen and (max-width: 992px) {
+     #carousel div.next,
+     #carousel div.nextRightSecond,
+     #carousel div.hideRight,
+     #carousel div.hideLeft {
+        display: none;
+     }
+  }
