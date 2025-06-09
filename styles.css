@@ -327,8 +327,8 @@ html {
 
      .carousel-card {
       flex: 0 0 auto;
-      width: 150px;
-      min-height: 400px;
+      width: 350px;
+      min-height: 600px;
       aspect-ratio: 2 / 3;
       background: linear-gradient(to bottom, #000, #3d87e3);
       color: #f3f4f6;
@@ -342,8 +342,8 @@ html {
   
     .carousel-card-upcoming {
       flex: 0 0 auto;
-      width: 150px;
-      min-height: 400px;
+      width: 350px;
+      min-height: 600px;
       aspect-ratio: 2 / 3;
       background: linear-gradient(to bottom, #000, #696969);
       color: #f3f4f6;
@@ -354,5 +354,5 @@ html {
       font-size: 0.85rem;
       line-height: 1.4;
     }
-
+    
   }
