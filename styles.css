@@ -262,31 +262,31 @@ html {
 
   .carousel-card {
     flex: 0 0 auto;
-    width: clamp(280px, 80vw, 450px);
-    min-height: clamp(420px, 120vw, 700px);
+    width: 450px;
+    min-height: 700px;
     aspect-ratio: 2 / 3;
     background: linear-gradient(to bottom, #000, #3d87e3);
     color: #f3f4f6;
-    border-radius: clamp(12px, 2vw, 16px);
-    padding: clamp(0.75rem, 2vw, 1rem);
+    border-radius: 16px;
+    padding: 1rem;
     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     font-family: sans-serif;
-    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    font-size: 0.85rem;
     line-height: 1.4;
   }
 
   .carousel-card-upcoming {
     flex: 0 0 auto;
-    width: clamp(280px, 80vw, 450px);
-    min-height: clamp(420px, 120vw, 700px);
+    width: 450px;
+    min-height: 700px;
     aspect-ratio: 2 / 3;
     background: linear-gradient(to bottom, #000, #696969);
     color: #f3f4f6;
-    border-radius: clamp(12px, 2vw, 16px);
-    padding: clamp(0.75rem, 2vw, 1rem);
+    border-radius: 16px;
+    padding: 1rem;
     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
     font-family: sans-serif;
-    font-size: clamp(0.75rem, 1.5vw, 0.85rem);
+    font-size: 0.85rem;
     line-height: 1.4;
   }
 
@@ -317,10 +317,42 @@ html {
   }
 
   @media screen and (max-width: 992px) {
+
      #carousel div.next,
      #carousel div.nextRightSecond,
      #carousel div.hideRight,
      #carousel div.hideLeft {
         display: none;
      }
+
+     .carousel-card {
+      flex: 0 0 auto;
+      width: 150px;
+      min-height: 400px;
+      aspect-ratio: 2 / 3;
+      background: linear-gradient(to bottom, #000, #3d87e3);
+      color: #f3f4f6;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      font-family: sans-serif;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+  
+    .carousel-card-upcoming {
+      flex: 0 0 auto;
+      width: 150px;
+      min-height: 400px;
+      aspect-ratio: 2 / 3;
+      background: linear-gradient(to bottom, #000, #696969);
+      color: #f3f4f6;
+      border-radius: 16px;
+      padding: 1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      font-family: sans-serif;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
   }
