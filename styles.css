@@ -206,7 +206,7 @@ html {
       font-size: 0.85rem;
       line-height: 1.4;
       box-sizing: border-box;
-      overflow-x: hidden;
+      overflow: hidden;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
