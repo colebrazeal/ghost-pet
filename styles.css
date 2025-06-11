@@ -87,6 +87,22 @@ html {
     cursor: grab;
   }
 
+  /* Only prevent text selection when actively dragging */
+#carousel.dragging,
+#carousel.dragging * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Optional: Change cursor to indicate dragging state */
+#carousel.dragging {
+  cursor: grabbing !important;
+}
+
   #carousel {
   display: flex;
   justify-content: center;
